@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tipper Support</title>
 
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '907700591996301');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=907700591996301&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
 <style>
 *{
     margin:0;
@@ -66,13 +85,28 @@ h1{
     box-shadow: 0 0 15px rgba(247,201,72,0.4);
 }
 
-.footer{
-    margin-top:30px;
-    font-size:14px;
-    color:#7a8793;
+.justice-text{
+    margin-top:25px;
+    font-size:18px;
+    font-weight:bold;
+    color:#00ff88;
+    letter-spacing:1px;
+    animation: glow 1.5s infinite alternate;
 }
 
-/* Small Box Style */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #00ff88,
+                     0 0 10px #00ff88,
+                     0 0 20px #00ff88;
+    }
+    to {
+        text-shadow: 0 0 10px #00ff88,
+                     0 0 20px #00ff88,
+                     0 0 35px #00ff88;
+    }
+}
+
 .ads-box{
     margin-top:20px;
     display:inline-block;
@@ -102,8 +136,8 @@ h1{
         JOIN TELEGRAM
     </a>
 
-    <div class="footer">
-        © 2025 @DEAD_KRISH TG. All rights reserved.
+    <div class="justice-text">
+        Justice For All Tipper
     </div>
 
     <div class="ads-box">
